@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./fontawesome-free-5.15.4-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./css/catalogStone.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <img class="logo" src="./images/logo.png" alt="" />
+      <div class="btn-hamburger" id="burger">
+        <div id="drop-men" class="dropdown">
+          <a data-toggle="dropdown"><i class="fas fa-bars"></i></a>
+          <ul
+            style="background-color: black; margin-left: -10px"
+            id="drop-menu"
+            class="dropdown-menu"
+            role="menu"
+            aria-labelledby="dLabel"
+          >
+            <div class="dropdow">
+              <li><a href="contact.html">Контакты</a></li>
+            </div>
+            <hr />
+            <div class="dropdow">
+              <li><a href="gallery.html">Галерея</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <ul class="header" id="ul">
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+      </ul>
+      <div class="li-cen">
+        <li class="glry">
+          <div class="dropdown">
+            <a style="color: #fff;"class="dropdown-toggle" data-toggle="dropdown">Каталог</a>
+            <ul
+              id="dropdown-menu"
+              class="dropdown-menu"
+              role="menu"
+              aria-labelledby="dLabel"
+            >
+              <div class="dropdowns">
+                <h1 class="stoness"><a style="color: black;" href="catalogStone.html">Плитки</a></h1>
+                <img
+                  class="drop-img"
+                  width="193px"
+                  height="117px"
+                  src="./images/stones.png"
+                  alt=""
+                />
+              </div>
+              <hr class="hri" />
+              <div class="dropdowns">
+                <h1 class="laminate">
+                  <a style="color: black;" href="catalogLaminat.html">Пракет/ламинат</a>
+                </h1>
+                <img
+                  class="drop-img"
+                  width="193px"
+                  height="117px"
+                  src="./images/laminates.png"
+                  alt=""
+                />
+              </div>
+            </ul>
+          </div>
+        </li>
+      </div>
+      <div class="navbar-end">
+        <a href="login.html"
+          ><img class="user" src="./images/user.png" alt=""
+        /></a>
+        <a href="cart.html"
+          ><img class="cart" src="./images/cart.png" alt=""
+        /></a>
+        <button type="button" class="search-btn">
+          <img class="search" src="./images/search.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <div class="white">
+      <button type="button" class="clear-btn">
+        <img class="cleo" src="./images/clear.png" alt="" />
+      </button>
+      <div class="white-div">
+        <input type="text" class="white-input" />
+      </div>
+      <h1 class="white-text">Найдено (0)</h1>
+    </div>
+
+    <div class="catalog-section">
+      <h1 class="catalog-text">Каталог</h1>
+      <div class="catalog-div">
+        <div class="catalog-first-div">
+          <h1 class="catalog-div-text">Тип товара</h1>
+          <div class="btns-cata">
+            <a href="catalogStone.html"><button type="button" class="plitka-btn">Плитка</button></a>
+            <a href="catalogLaminat.html"><button type="button" class="laminat-btn">Ламинат/паркет</button></a>
+          </div>
+        </div>
+        <div class="catalog-second-div">
+          <select
+            id="select"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected>Рекомендуемые</option>
+            <option value="1">Высокая цена</option>
+            <option value="2">Низкая цена</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="catalogs">
+        <div class="catalog">
+          <button type="button" class="catalog-btn">
+            Фильтр<img class="upper" src="./images/up.png" alt="" />
+          </button>
+          <div class="catalog-hid">
+            <div class="sum-section">
+              <h1 class="sum-text">Цена</h1>
+              <input type="text" class="catalog-input" placeholder="от" />
+              <input type="text" class="catalog-input" placeholder="до" />
+            </div>
+            <div class="format-section">
+              <h1 class="sum-text">Формат</h1>
+              <div class="checkboxes" style="height: 150px">
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <h1 class="check-text">400x400</h1>
+                </div>
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <h1 class="check-text">300x600</h1>
+                </div>
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <h1 class="check-text">400x800</h1>
+                </div>
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <h1 class="check-text">600x1200</h1>
+                </div>
+              </div>
+            </div>
+            <div class="colors-div">
+              <h1 class="sum-text">Основной цвет</h1>
+              <div class="checkboxes" style="height: 229px">
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <span class="colors" style="border: 1px solid"></span>
+                  <h1 class="check-text">Белый</h1>
+                </div>
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <span class="colors" style="background-color: #808080"></span>
+                  <h1 class="check-text">Серый</h1>
+                </div>
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <span class="colors" style="background-color: #000"></span>
+                  <h1 class="check-text">Чёрный</h1>
+                </div>
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <span class="colors" style="background-color: #008000"></span>
+                  <h1 class="check-text">Зелёный</h1>
+                </div>
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <span class="colors" style="background-color: #964b00"></span>
+                  <h1 class="check-text">Коричневый</h1>
+                </div>
+                <div style="display: flex">
+                  <input type="checkbox" class="checks" />
+                  <span class="colors" style="background-color: #42aaff"></span>
+                  <h1 class="check-text">Голубой</h1>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                width: 300px;
+              "
+            >
+              <h1 class="clear-text">Сбросить фильтр</h1>
+              <img class="clear-img" src="./images/x.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="catalog">
+          <div class="stones">
+            <a href="cardProduct.html"
+              ><div class="stone">
+                <div>
+                  <span class="sale">-20%</span>
+                  <img class="stone-img" src="./images/stone5.png" alt="" />
+                </div>
+                <div class="stone-div">
+                  <span class="stone-price">150.000</span
+                  ><span class="stone-sum">сум/m²</span>
+                  <span class="stone-old">200.000</span
+                  ><span class="stone-sums">сум/m²</span>
+                </div>
+                <div class="stone-di">
+                  <h4 class="stone-text">Boost Pro 3D Urban</h4>
+                  <h4 class="stone-title">Ergon (Италия)</h4>
+                </div>
+                <p class="stone-para">
+                  Плитка Laparet Calacatta Oro 60x120, золотая, полированная
+                </p>
+                <div class="stone-d">
+                  <button type="button" class="stone-btn">
+                    <img src="./images/shopping.png" alt="" />
+                  </button>
+                  <img class="fav" src="./images/favorite.png" alt="" />
+                </div></div
+            ></a>
+            <div class="stone">
+              <div>
+                <span class="sale">-20%</span>
+                <img class="stone-img" src="./images/stone6.png" alt="" />
+              </div>
+              <div class="stone-div">
+                <span class="stone-price">150.000</span
+                ><span class="stone-sum">сум/m²</span>
+                <span class="stone-old">200.000</span
+                ><span class="stone-sums">сум/m²</span>
+              </div>
+              <div class="stone-di">
+                <h4 class="stone-text">Boost Pro 3D Urban</h4>
+                <h4 class="stone-title">Ergon (Италия)</h4>
+              </div>
+              <p class="stone-para">
+                Плитка Laparet Calacatta Oro 60x120, золотая, полированная
+              </p>
+              <div class="stone-d">
+                <button type="button" class="stone-btn">
+                  <img src="./images/shopping.png" alt="" />
+                </button>
+                <img class="fav" src="./images/favorite.png" alt="" />
+              </div>
+            </div>
+            <div class="stone">
+              <div>
+                <span class="sale">-20%</span>
+                <img class="stone-img" src="./images/stone7.png" alt="" />
+              </div>
+              <div class="stone-div">
+                <span class="stone-price">150.000</span
+                ><span class="stone-sum">сум/m²</span>
+                <span class="stone-old">200.000</span
+                ><span class="stone-sums">сум/m²</span>
+              </div>
+              <div class="stone-di">
+                <h4 class="stone-text">Boost Pro 3D Urban</h4>
+                <h4 class="stone-title">Ergon (Италия)</h4>
+              </div>
+              <p class="stone-para">
+                Плитка Laparet Calacatta Oro 60x120, золотая, полированная
+              </p>
+              <div class="stone-d">
+                <button type="button" class="stone-btn">
+                  <img src="./images/shopping.png" alt="" />
+                </button>
+                <img class="fav" src="./images/favorite.png" alt="" />
+              </div>
+            </div>
+            <div class="stone">
+              <div>
+                <span class="sale">-20%</span>
+                <img class="stone-img" src="./images/stone2.png" alt="" />
+              </div>
+              <div class="stone-div">
+                <span class="stone-price">150.000</span
+                ><span class="stone-sum">сум/m²</span>
+                <span class="stone-old">200.000</span
+                ><span class="stone-sums">сум/m²</span>
+              </div>
+              <div class="stone-di">
+                <h4 class="stone-text">Boost Pro 3D Urban</h4>
+                <h4 class="stone-title">Ergon (Италия)</h4>
+              </div>
+              <p class="stone-para">
+                Плитка Laparet Calacatta Oro 60x120, золотая, полированная
+              </p>
+              <div class="stone-d">
+                <button type="button" class="stone-btn">
+                  <img src="./images/shopping.png" alt="" />
+                </button>
+                <img class="fav" src="./images/favorite.png" alt="" />
+              </div>
+            </div>
+            <div class="stone">
+              <div>
+                <span class="sale">-20%</span>
+                <img class="stone-img" src="./images/stone8.png" alt="" />
+              </div>
+              <div class="stone-div">
+                <span class="stone-price">150.000</span
+                ><span class="stone-sum">сум/m²</span>
+                <span class="stone-old">200.000</span
+                ><span class="stone-sums">сум/m²</span>
+              </div>
+              <div class="stone-di">
+                <h4 class="stone-text">Boost Pro 3D Urban</h4>
+                <h4 class="stone-title">Ergon (Италия)</h4>
+              </div>
+              <p class="stone-para">
+                Плитка Laparet Calacatta Oro 60x120, золотая, полированная
+              </p>
+              <div class="stone-d">
+                <button type="button" class="stone-btn">
+                  <img src="./images/shopping.png" alt="" />
+                </button>
+                <img class="fav" src="./images/favorite.png" alt="" />
+              </div>
+            </div>
+            <div class="stone">
+              <div>
+                <span class="sale">-20%</span>
+                <img class="stone-img" src="./images/stone3.png" alt="" />
+              </div>
+              <div class="stone-div">
+                <span class="stone-price">150.000</span
+                ><span class="stone-sum">сум/m²</span>
+                <span class="stone-old">200.000</span
+                ><span class="stone-sums">сум/m²</span>
+              </div>
+              <div class="stone-di">
+                <h4 class="stone-text">Boost Pro 3D Urban</h4>
+                <h4 class="stone-title">Ergon (Италия)</h4>
+              </div>
+              <p class="stone-para">
+                Плитка Laparet Calacatta Oro 60x120, золотая, полированная
+              </p>
+              <div class="stone-d">
+                <button type="button" class="stone-btn">
+                  <img src="./images/shopping.png" alt="" />
+                </button>
+                <img class="fav" src="./images/favorite.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            style="margin-left: auto; margin-right: auto; text-align: center"
+          >
+            <button type="button" class="more-btn">Показать больше</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map" style="background-image: url(./images/map.png);"></div>
+
+    <div class="footer-section">
+      <div class="footers">
+        <div class="footer-left">
+          <img class="logofooter" src="./images/ащщеукдщпщ.png" alt="" />
+          <h6 class="copy">©Demar 2021</h6>
+        </div>
+        <div class="footer-center">
+          <h1 class="footer-text"><a style="color: #fff;" href="contact.html">Контакт</a></h1>
+          <h1 class="footer-text"><a style="color: #fff;" href="gallery.html">Галерея</a></h1>
+          <h1 class="footer-text">
+            <a style="color: #fff;" href="catalogLaminat.html">Ламинат/Паркет</a>
+          </h1>
+          <h1 class="footer-text"><a style="color: #fff; " href="catalogStone.html"> Кафель </a></h1>
+        </div>
+        <div class="footer-right">
+          <h2 class="footer-phone">+998 (99) 555-25-89</h2>
+          <div class="footer-left-first">
+            <h2 class="footer-title">Адрес</h2>
+            <h6 class="footer-para">Чиланзарский район, 8 улица Аль-Хорезми</h6>
+          </div>
+          <div>
+            <h2 class="footer-title">E-mail</h2>
+            <h6 class="footer-para">Demar.support.gmail.com</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
